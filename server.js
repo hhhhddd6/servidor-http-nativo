@@ -31,7 +31,7 @@ const server = http.createServer((req, res) => {
     );
     }
 
-    if (req.method == "GET" && urlObj.pathname == "/produtos") {
+   else if (req.method == "GET" && urlObj.pathname == "/produtos") {
         res.statusCode = 200;
         return res.end(JSON.stringify(produtos));
     }
